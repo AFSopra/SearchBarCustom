@@ -9,21 +9,47 @@
 /* Begin PBXBuildFile section */
 		67C10E9B2567DC74002BA161 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C10E9A2567DC74002BA161 /* AppDelegate.swift */; };
 		67C10E9D2567DC74002BA161 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C10E9C2567DC74002BA161 /* SceneDelegate.swift */; };
-		67C10E9F2567DC74002BA161 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C10E9E2567DC74002BA161 /* ViewController.swift */; };
-		67C10EA22567DC74002BA161 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67C10EA02567DC74002BA161 /* Main.storyboard */; };
 		67C10EA42567DC75002BA161 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67C10EA32567DC75002BA161 /* Assets.xcassets */; };
 		67C10EA72567DC75002BA161 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67C10EA52567DC75002BA161 /* LaunchScreen.storyboard */; };
+		67C10ED02567DCBB002BA161 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C10EC42567DCBB002BA161 /* HomePresenter.swift */; };
+		67C10ED12567DCBB002BA161 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C10EC62567DCBB002BA161 /* HomeModel.swift */; };
+		67C10ED22567DCBB002BA161 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C10EC82567DCBB002BA161 /* HomeView.swift */; };
+		67C10ED32567DCBB002BA161 /* HomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67C10EC92567DCBB002BA161 /* HomeView.xib */; };
+		67C10ED42567DCBB002BA161 /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C10ECB2567DCBB002BA161 /* HomeProtocols.swift */; };
+		67C10ED52567DCBB002BA161 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C10ECD2567DCBB002BA161 /* HomeInteractor.swift */; };
+		67C10ED62567DCBB002BA161 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C10ECF2567DCBB002BA161 /* HomeRouter.swift */; };
+		67C10EF52567DCFB002BA161 /* SearchBarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C10EE92567DCFB002BA161 /* SearchBarPresenter.swift */; };
+		67C10EF62567DCFB002BA161 /* SearchBarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C10EEB2567DCFB002BA161 /* SearchBarModel.swift */; };
+		67C10EF72567DCFB002BA161 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C10EED2567DCFB002BA161 /* SearchBarView.swift */; };
+		67C10EF82567DCFB002BA161 /* SearchBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67C10EEE2567DCFB002BA161 /* SearchBarView.xib */; };
+		67C10EF92567DCFB002BA161 /* SearchBarProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C10EF02567DCFB002BA161 /* SearchBarProtocols.swift */; };
+		67C10EFA2567DCFB002BA161 /* SearchBarInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C10EF22567DCFB002BA161 /* SearchBarInteractor.swift */; };
+		67C10EFB2567DCFB002BA161 /* SearchBarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C10EF42567DCFB002BA161 /* SearchBarRouter.swift */; };
+		67C10F002567DE49002BA161 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C10EFF2567DE49002BA161 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		67C10E972567DC74002BA161 /* SearchBarCustom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearchBarCustom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67C10E9A2567DC74002BA161 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67C10E9C2567DC74002BA161 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		67C10E9E2567DC74002BA161 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		67C10EA12567DC74002BA161 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		67C10EA32567DC75002BA161 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67C10EA62567DC75002BA161 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		67C10EA82567DC75002BA161 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67C10EC42567DCBB002BA161 /* HomePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		67C10EC62567DCBB002BA161 /* HomeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		67C10EC82567DCBB002BA161 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		67C10EC92567DCBB002BA161 /* HomeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeView.xib; sourceTree = "<group>"; };
+		67C10ECB2567DCBB002BA161 /* HomeProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
+		67C10ECD2567DCBB002BA161 /* HomeInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		67C10ECF2567DCBB002BA161 /* HomeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		67C10EE92567DCFB002BA161 /* SearchBarPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBarPresenter.swift; sourceTree = "<group>"; };
+		67C10EEB2567DCFB002BA161 /* SearchBarModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBarModel.swift; sourceTree = "<group>"; };
+		67C10EED2567DCFB002BA161 /* SearchBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		67C10EEE2567DCFB002BA161 /* SearchBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchBarView.xib; sourceTree = "<group>"; };
+		67C10EF02567DCFB002BA161 /* SearchBarProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBarProtocols.swift; sourceTree = "<group>"; };
+		67C10EF22567DCFB002BA161 /* SearchBarInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBarInteractor.swift; sourceTree = "<group>"; };
+		67C10EF42567DCFB002BA161 /* SearchBarRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBarRouter.swift; sourceTree = "<group>"; };
+		67C10EFF2567DE49002BA161 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +82,156 @@
 		67C10E992567DC74002BA161 /* SearchBarCustom */ = {
 			isa = PBXGroup;
 			children = (
-				67C10E9A2567DC74002BA161 /* AppDelegate.swift */,
-				67C10E9C2567DC74002BA161 /* SceneDelegate.swift */,
-				67C10E9E2567DC74002BA161 /* ViewController.swift */,
-				67C10EA02567DC74002BA161 /* Main.storyboard */,
-				67C10EA32567DC75002BA161 /* Assets.xcassets */,
-				67C10EA52567DC75002BA161 /* LaunchScreen.storyboard */,
+				67C10EC22567DCBB002BA161 /* Home */,
+				67C10EE72567DCFB002BA161 /* SearchBar */,
+				67C10EAF2567DC7D002BA161 /* Project */,
+				67C10EB22567DC95002BA161 /* Utils */,
 				67C10EA82567DC75002BA161 /* Info.plist */,
 			);
 			path = SearchBarCustom;
+			sourceTree = "<group>";
+		};
+		67C10EAF2567DC7D002BA161 /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				67C10E9A2567DC74002BA161 /* AppDelegate.swift */,
+				67C10E9C2567DC74002BA161 /* SceneDelegate.swift */,
+			);
+			path = Project;
+			sourceTree = "<group>";
+		};
+		67C10EB22567DC95002BA161 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				67C10EFF2567DE49002BA161 /* Extensions.swift */,
+				67C10EA32567DC75002BA161 /* Assets.xcassets */,
+				67C10EA52567DC75002BA161 /* LaunchScreen.storyboard */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		67C10EC22567DCBB002BA161 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				67C10EC72567DCBB002BA161 /* View */,
+				67C10ECC2567DCBB002BA161 /* Interactor */,
+				67C10ECA2567DCBB002BA161 /* Protocols */,
+				67C10EC32567DCBB002BA161 /* Presenter */,
+				67C10EC52567DCBB002BA161 /* Model */,
+				67C10ECE2567DCBB002BA161 /* Router */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		67C10EC32567DCBB002BA161 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				67C10EC42567DCBB002BA161 /* HomePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		67C10EC52567DCBB002BA161 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				67C10EC62567DCBB002BA161 /* HomeModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		67C10EC72567DCBB002BA161 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				67C10EC82567DCBB002BA161 /* HomeView.swift */,
+				67C10EC92567DCBB002BA161 /* HomeView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		67C10ECA2567DCBB002BA161 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				67C10ECB2567DCBB002BA161 /* HomeProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		67C10ECC2567DCBB002BA161 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				67C10ECD2567DCBB002BA161 /* HomeInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		67C10ECE2567DCBB002BA161 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				67C10ECF2567DCBB002BA161 /* HomeRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		67C10EE72567DCFB002BA161 /* SearchBar */ = {
+			isa = PBXGroup;
+			children = (
+				67C10EEC2567DCFB002BA161 /* View */,
+				67C10EF12567DCFB002BA161 /* Interactor */,
+				67C10EEF2567DCFB002BA161 /* Protocols */,
+				67C10EE82567DCFB002BA161 /* Presenter */,
+				67C10EEA2567DCFB002BA161 /* Model */,
+				67C10EF32567DCFB002BA161 /* Router */,
+			);
+			path = SearchBar;
+			sourceTree = "<group>";
+		};
+		67C10EE82567DCFB002BA161 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				67C10EE92567DCFB002BA161 /* SearchBarPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		67C10EEA2567DCFB002BA161 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				67C10EEB2567DCFB002BA161 /* SearchBarModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		67C10EEC2567DCFB002BA161 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				67C10EED2567DCFB002BA161 /* SearchBarView.swift */,
+				67C10EEE2567DCFB002BA161 /* SearchBarView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		67C10EEF2567DCFB002BA161 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				67C10EF02567DCFB002BA161 /* SearchBarProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		67C10EF12567DCFB002BA161 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				67C10EF22567DCFB002BA161 /* SearchBarInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		67C10EF32567DCFB002BA161 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				67C10EF42567DCFB002BA161 /* SearchBarRouter.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,9 +291,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67C10EF82567DCFB002BA161 /* SearchBarView.xib in Resources */,
 				67C10EA72567DC75002BA161 /* LaunchScreen.storyboard in Resources */,
 				67C10EA42567DC75002BA161 /* Assets.xcassets in Resources */,
-				67C10EA22567DC74002BA161 /* Main.storyboard in Resources */,
+				67C10ED32567DCBB002BA161 /* HomeView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,23 +305,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67C10E9F2567DC74002BA161 /* ViewController.swift in Sources */,
+				67C10ED12567DCBB002BA161 /* HomeModel.swift in Sources */,
+				67C10ED02567DCBB002BA161 /* HomePresenter.swift in Sources */,
 				67C10E9B2567DC74002BA161 /* AppDelegate.swift in Sources */,
+				67C10EFA2567DCFB002BA161 /* SearchBarInteractor.swift in Sources */,
+				67C10ED22567DCBB002BA161 /* HomeView.swift in Sources */,
+				67C10ED42567DCBB002BA161 /* HomeProtocols.swift in Sources */,
+				67C10EFB2567DCFB002BA161 /* SearchBarRouter.swift in Sources */,
+				67C10EF52567DCFB002BA161 /* SearchBarPresenter.swift in Sources */,
+				67C10ED62567DCBB002BA161 /* HomeRouter.swift in Sources */,
+				67C10EF72567DCFB002BA161 /* SearchBarView.swift in Sources */,
+				67C10F002567DE49002BA161 /* Extensions.swift in Sources */,
 				67C10E9D2567DC74002BA161 /* SceneDelegate.swift in Sources */,
+				67C10ED52567DCBB002BA161 /* HomeInteractor.swift in Sources */,
+				67C10EF62567DCFB002BA161 /* SearchBarModel.swift in Sources */,
+				67C10EF92567DCFB002BA161 /* SearchBarProtocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		67C10EA02567DC74002BA161 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				67C10EA12567DC74002BA161 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		67C10EA52567DC75002BA161 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -296,7 +468,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = AFSopra.SearchBarCustom;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,7 +487,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = AFSopra.SearchBarCustom;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
