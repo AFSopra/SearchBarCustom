@@ -45,19 +45,15 @@ class SearchBarView: UIViewController {
         searchBar.setImage(UIImage(), for: .search, state: .normal)
         searchBar.delegate = self
 
-        if #available(iOS 13.0, *) {
-            searchBar.searchTextField.font = SearchBarConstants.font
-            searchBar.searchTextField.textColor = SearchBarConstants.darkIndigo
-            searchBar.searchTextField.tintColor = SearchBarConstants.darkIndigo
-            searchBar.searchTextField.backgroundColor = SearchBarConstants.paleGreyTwo
-            searchBar.searchTextField.layer.cornerRadius = SearchBarConstants.cornerRadius
-            searchBar.searchTextField.clipsToBounds = true
+        searchBar.textField?.font = SearchBarConstants.font
+        searchBar.textField?.textColor = SearchBarConstants.darkIndigo
+        searchBar.textField?.tintColor = SearchBarConstants.darkIndigo
+        searchBar.textField?.backgroundColor = SearchBarConstants.paleGreyTwo
+        searchBar.textField?.layer.cornerRadius = SearchBarConstants.cornerRadius
+        searchBar.textField?.clipsToBounds = true
 
-            searchBar.searchTextField.setLeftPaddingPoints(SearchBarConstants.leftTextFieldPadding)
-            searchBar.searchTextField.setRightPaddingPoints(SearchBarConstants.leftTextFieldPadding)
-        } else {
-            // Fallback on earlier versions
-        }
+        searchBar.textField?.setLeftPaddingPoints(SearchBarConstants.leftTextFieldPadding)
+        searchBar.textField?.setRightPaddingPoints(SearchBarConstants.leftTextFieldPadding)
 
         filterButton.titleLabel?.font = SearchBarConstants.font
         filterButton.titleLabel?.textColor = SearchBarConstants.darkIndigo
@@ -118,12 +114,8 @@ extension SearchBarView: UISearchBarDelegate {
     }
 
     private func showOnlySearchBar() {
-        if #available(iOS 13.0, *) {
-            searchBar.searchTextField.layer.borderWidth = SearchBarConstants.borderWidth
-            searchBar.searchTextField.layer.borderColor = UIColor.blue.cgColor
-        } else {
-            // Fallback on earlier versions
-        }
+        searchBar.textField?.layer.borderWidth = SearchBarConstants.borderWidth
+        searchBar.textField?.layer.borderColor = UIColor.blue.cgColor
 
         filterButton.isHidden = true
         scanButton.isHidden = true
@@ -136,12 +128,8 @@ extension SearchBarView: UISearchBarDelegate {
     }
 
     private func resetSearchView() {
-        if #available(iOS 13.0, *) {
-            searchBar.searchTextField.layer.borderWidth = 0
-            searchBar.searchTextField.layer.borderColor = UIColor.clear.cgColor
-        } else {
-            // Fallback on earlier versions
-        }
+        searchBar.textField?.layer.borderWidth = 0
+        searchBar.textField?.layer.borderColor = UIColor.clear.cgColor
 
         filterButton.isHidden = false
         scanButton.isHidden = false
