@@ -41,24 +41,26 @@ class SearchBarView: UIViewController {
     }
 
     private func setupSearchBar() {
-        searchBar.placeholder = "Buscar por..."
-        searchBar.setImage(UIImage(), for: .search, state: .normal)
-        searchBar.delegate = self
+        if let searchBarTextField = searchBar.textField {
+            searchBar.placeholder = "Buscar por..."
+            searchBar.setImage(UIImage(), for: .search, state: .normal)
+            searchBar.delegate = self
 
-        searchBar.textField?.font = SearchBarConstants.font
-        searchBar.textField?.textColor = SearchBarConstants.darkIndigo
-        searchBar.textField?.tintColor = SearchBarConstants.darkIndigo
-        searchBar.textField?.backgroundColor = SearchBarConstants.paleGreyTwo
-        searchBar.textField?.layer.cornerRadius = SearchBarConstants.cornerRadius
-        searchBar.textField?.clipsToBounds = true
+            searchBarTextField.font = SearchBarConstants.font
+            searchBarTextField.textColor = SearchBarConstants.darkIndigo
+            searchBarTextField.tintColor = SearchBarConstants.darkIndigo
+            searchBarTextField.backgroundColor = SearchBarConstants.paleGreyTwo
+            searchBarTextField.layer.cornerRadius = SearchBarConstants.cornerRadius
+            searchBarTextField.clipsToBounds = true
 
-        searchBar.textField?.setLeftPaddingPoints(SearchBarConstants.leftTextFieldPadding)
-        searchBar.textField?.setRightPaddingPoints(SearchBarConstants.leftTextFieldPadding)
+            searchBarTextField.setLeftPaddingPoints(SearchBarConstants.leftTextFieldPadding)
+            searchBarTextField.setRightPaddingPoints(SearchBarConstants.leftTextFieldPadding)
 
-        filterButton.titleLabel?.font = SearchBarConstants.font
-        filterButton.titleLabel?.textColor = SearchBarConstants.darkIndigo
+            filterButton.titleLabel?.font = SearchBarConstants.font
+            filterButton.titleLabel?.textColor = SearchBarConstants.darkIndigo
 
-        setupScanButton()
+            setupScanButton()
+        }
     }
 
     func setupScanButton() {
@@ -91,18 +93,22 @@ extension SearchBarView: SearchBarViewProtocol {}
 
 extension SearchBarView: UISearchBarDelegate {
     func searchBar(_: UISearchBar, textDidChange searchText: String) {
-        self.searchText = searchText
-        if searchText == "Fin" {
-            searchBar.resignFirstResponder()
-            searchBar.searchTextField.text = ""
+        if let searchBarTextField = searchBar.textField {
+            self.searchText = searchText
+            if searchText == "Fin" {
+                searchBar.resignFirstResponder()
+                searchBarTextField.text = ""
+            }
         }
     }
 
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        searchBar.resignFirstResponder()
-        searchBar.searchTextField.text = ""
+        if let searchBarTextField = searchBar.textField {
+            searchBar.resignFirstResponder()
+            searchBarTextField.text = ""
 
-        createAlert(searchText: searchText)
+            createAlert(searchText: searchText)
+        }
     }
 
     func searchBarTextDidBeginEditing(_: UISearchBar) {
@@ -114,29 +120,33 @@ extension SearchBarView: UISearchBarDelegate {
     }
 
     private func showOnlySearchBar() {
-        searchBar.textField?.layer.borderWidth = SearchBarConstants.borderWidth
-        searchBar.textField?.layer.borderColor = UIColor.blue.cgColor
+        if let searchBarTextField = searchBar.textField {
+            searchBarTextField.layer.borderWidth = SearchBarConstants.borderWidth
+            searchBarTextField.layer.borderColor = UIColor.blue.cgColor
 
-        filterButton.isHidden = true
-        scanButton.isHidden = true
-        activeSearchBarConstraint.isActive = true
-        inactiveSearchBarConstraint.isActive = false
+            filterButton.isHidden = true
+            scanButton.isHidden = true
+            activeSearchBarConstraint.isActive = true
+            inactiveSearchBarConstraint.isActive = false
 
-        UIView.animate(withDuration: SearchBarConstants.animationDurationOut) {
-            self.view.layoutIfNeeded()
+            UIView.animate(withDuration: SearchBarConstants.animationDurationOut) {
+                self.view.layoutIfNeeded()
+            }
         }
     }
 
     private func resetSearchView() {
-        searchBar.textField?.layer.borderWidth = 0
-        searchBar.textField?.layer.borderColor = UIColor.clear.cgColor
+        if let searchBarTextField = searchBar.textField {
+            searchBarTextField.layer.borderWidth = 0
+            searchBarTextField.layer.borderColor = UIColor.clear.cgColor
 
-        filterButton.isHidden = false
-        scanButton.isHidden = false
-        activeSearchBarConstraint.isActive = false
-        inactiveSearchBarConstraint.isActive = true
-        UIView.animate(withDuration: SearchBarConstants.animationDurationIn) {
-            self.view.layoutIfNeeded()
+            filterButton.isHidden = false
+            scanButton.isHidden = false
+            activeSearchBarConstraint.isActive = false
+            inactiveSearchBarConstraint.isActive = true
+            UIView.animate(withDuration: SearchBarConstants.animationDurationIn) {
+                self.view.layoutIfNeeded()
+            }
         }
     }
 }
