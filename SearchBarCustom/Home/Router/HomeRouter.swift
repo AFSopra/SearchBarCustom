@@ -38,7 +38,7 @@ final class HomeRouter {
 
 extension HomeRouter: HomeRouterProtocol {
     func presentSearchBar() {
-        let vc = SearchBarRouter.assembleModule(withinNavController: true)
+        let vc = SearchBarRouter.assembleModule(withinNavController: false)
         view.navigationController?.pushViewController(vc, animated: true)
     }
 }

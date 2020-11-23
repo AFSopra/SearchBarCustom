@@ -32,7 +32,12 @@ final class SearchBarRouter {
     }
 
     static func viewControllerFromStoryboard() -> SearchBarView {
-        return SearchBarView(nibName: "SearchBarView", bundle: Bundle.main)
+        let storyboard = UIStoryboard(name: "SearchBarView", bundle: Bundle.main)
+        if let vc = storyboard.instantiateViewController(withIdentifier: "SearchBarView") as? SearchBarView {
+            return vc
+        }
+        
+        return SearchBarView()
     }
 }
 
